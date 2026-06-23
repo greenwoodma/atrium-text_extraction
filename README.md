@@ -11,7 +11,7 @@ python -m venv venv
 ./venv/bin pip install -r requirements.txt
 ```
 
-Note that if you wish to run OCR on the PDF before extracting the text then this requires OCRmYPDF to also be installed so that the platform native tools are available. Instructions for how to do this for your platform are available [here](https://ocrmypdf.readthedocs.io/en/latest/installation.html).
+Note that if you wish to run OCR on the PDF before extracting the text then this requires OCRmyPDF to also be installed so that the platform native tools are available. Instructions for how to do this for your platform are available [here](https://ocrmypdf.readthedocs.io/en/latest/installation.html).
 
 
 ## Usage
@@ -19,24 +19,22 @@ Note that if you wish to run OCR on the PDF before extracting the text then this
 Once the dependencies are installed you can run the script
 
 ```
-./venv/bin/python pdf_to_json.py
+./venv/bin/python pdf_to_json.py -h
 ```
 
 which will display this helpful usage message:
 
 ```
-usage: ATRIUM PDF Text Extraction [-h] [--ocr] pdf json
-
-positional arguments:
-  pdf         PDF to extract text from
-  json        JSON file to write output into
+usage: ATRIUM PDF Text Extraction [-h] --pdf PDF --json JSON [--ocr]
 
 options:
-  -h, --help  show this help message and exit
-  --ocr       Run OCR before extracting text
+  -h, --help   show this help message and exit
+  --pdf PDF    PDF to extract text from
+  --json JSON  JSON file to write output into
+  --ocr        Run OCR before extracting text
 ```
 
-As you can see for basic operation simply provide the path to the PDF file as the first argument and the path to where to store the JSON outpu tas the second argument. If you also want to perform OCR then simply add the `--ocr` flag.
+As you can see for basic operation simply provide the path to the PDF file using the '--pdf' argument and the path to where to store the JSON output via the `--json` argument. If you also want to perform OCR then simply add the `--ocr` flag.
 
 Note that for PDF files which were [born digital](https://en.wikipedia.org/wiki/Born-digital) it is unlikely you will want to run the OCR step. On PDF files which were created by scanning and OCRing paper documents sometimes it is useful to re-do the OCR as the performance may well have improved since they were originally produced.
 
