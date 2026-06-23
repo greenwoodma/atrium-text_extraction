@@ -128,7 +128,7 @@ if __name__ == "__main__":
     </param>
   </inputs>
   <outputs>
-    <data name="json" format="txt" label="json" hidden="false"/>
+    <data name="json" format="json" label="json" hidden="false"/>
   </outputs>
   <tests>
     <test>
