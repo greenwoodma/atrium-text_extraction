@@ -101,11 +101,11 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(prog="ATRIUM PDF Text Extraction")
 
-    parser.add_argument("pdf",
-        help="PDF to extract text from")
+    parser.add_argument("--pdf",
+        help="PDF to extract text from", required=True)
 
-    parser.add_argument("json",
-        help="JSON file to write output into")
+    parser.add_argument("--json",
+        help="JSON file to write output into", required=True)
 
     parser.add_argument("--ocr", action="store_true",
         help="Run OCR before extracting text")
