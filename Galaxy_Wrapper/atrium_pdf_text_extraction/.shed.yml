@@ -12,8 +12,13 @@ synopsis: Extracts text from PDF files into a page based JSON format
 
 # this should point to the folder on the mastrer branch where packages
 # are built from, but as we are in a fork we point to that for now
-remote_repository_url: https://github.com/greenwoodma/atrium-text_extraction/tree/galaxy-wrapper/Galaxy_Wrapper
+remote_repository_url: https://github.com/greenwoodma/atrium-text_extraction/tree/galaxy-wrapper/Galaxy_Wrapper/atrium_pdf_text_extraction
 
 category: Text Manipulation
+
+# need to decide exactly who owns this, but for now I've created an
+# account on https://toolshed.g2.bx.psu.edu so could in theory push
+# this to there myself (do we have or want an account owned by DARIAH
+# or ATRIUM rather than a person?)
 owner: greenwoodma
 type: unrestricted
