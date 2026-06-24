@@ -1,0 +1,19 @@
+# other tools seem to have names with spaces and capital letters
+# etc. but if using ToolFactory these are all replaced by underscores
+# so we stick with that for ease
+name: atrium_pdf_text_extraction
+
+
+description: ATRIUM PDF Text Extraction
+
+# This was added by ToolFactory but I can't find it in the format
+# definition.
+synopsis: Extracts text from PDF files into a page based JSON format
+
+# this should point to the folder on the mastrer branch where packages
+# are built from, but as we are in a fork we point to that for now
+remote_repository_url: https://github.com/greenwoodma/atrium-text_extraction/tree/galaxy-wrapper/Galaxy_Wrapper
+
+category: Text Manipulation
+owner: greenwoodma
+type: unrestricted
