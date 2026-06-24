@@ -9,7 +9,7 @@
     <requirement version="5.5.2" type="package">tesseract</requirement>
     <requirement version="2.8.4" type="package">fpdf2</requirement>
   </requirements>
-  <version_command><![CDATA[echo "6.1.3"]]></version_command>
+  <version_command><![CDATA[echo "1.0.0"]]></version_command>
   <command><![CDATA[python
 '$runme'
 --pdf
