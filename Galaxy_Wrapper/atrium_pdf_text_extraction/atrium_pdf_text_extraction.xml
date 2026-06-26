@@ -21,7 +21,7 @@
     <param name="pdf" type="data" optional="false" label="PDF file from which to extact text" help="" format="pdf" multiple="false"/>
     <param name="ocr" type="select" label="Should we perform OCR before extracting text?" help="" display="radio">
       <option value="set">Yes</option>
-      <option value="notset">No</option>
+      <option value="notset" selected="true">No</option>
     </param>
   </inputs>
   <outputs>
