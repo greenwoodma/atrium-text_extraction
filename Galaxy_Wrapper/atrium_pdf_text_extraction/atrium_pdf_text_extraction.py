@@ -64,7 +64,7 @@ def convert(file: str|IO[Any]|Path):
     # return a dict in the agreed format that we can then dump to JSON
     return {
         "meta": {
-            "filename": file
+            #"filename": file
         },
         "text": text,
         "sections": sections
@@ -90,7 +90,10 @@ if __name__ == "__main__":
             # now do the extraction as befoe
             result = convert(tmpFile)
             # make sure we use the original PDF filename in the output
-            result["meta"]["filename"] = args.pdf
+            #result["meta"]["filename"] = args.pdf
+            result["meta"] = {
+                
+            }
     else:
         # just process the PDF file as normal
         result = convert(args.pdf)
